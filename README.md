@@ -5,3 +5,16 @@ Members:
   - Nguyễn Quỳnh Nga - 1801040158
   - Nguyễn Tuấn Hưng - 1801040113
   - Cao Huy Thông - 1801040214
+## Main technologies
+  -Servlet
+  -JSP
+  -JDBC
+## Software
+  - Eclipse for Enterprise Java Developer
+  - MySQL Community Server
+  - Apache Tomcat
+## SDLC methodoldy
+  - Scrum
+## Software design pattern
+  - MVC
+  
