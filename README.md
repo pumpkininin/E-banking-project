@@ -6,9 +6,9 @@ Members:
   - Nguyễn Tuấn Hưng - 1801040113
   - Cao Huy Thông - 1801040214
 ## Main technologies
-  -Servlet
-  -JSP
-  -JDBC
+  - Servlet
+  - JSP
+  - JDBC
 ## Software
   - Eclipse for Enterprise Java Developer
   - MySQL Community Server
