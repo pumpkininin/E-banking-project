@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Banking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Banking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EBankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Banking" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.se2.ebanking.EBankingApplication" />
@@ -121,7 +129,8 @@
       <workItem from="1619550843448" duration="5117000" />
       <workItem from="1619616523592" duration="1338000" />
       <workItem from="1619636964361" duration="8614000" />
-      <workItem from="1620056456055" duration="190000" />
+      <workItem from="1620056456055" duration="960000" />
+      <workItem from="1620061950373" duration="350000" />
     </task>
     <servers />
   </component>
