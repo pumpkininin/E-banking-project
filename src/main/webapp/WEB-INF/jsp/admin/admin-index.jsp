@@ -44,11 +44,16 @@
 <body>
 
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-	<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">E-banking</a>
+	<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/admin/">E-banking</a>
 	<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+			<a class="nav-link" href="/customer/">Customer view</a>
+		</li>
+	</ul>
 	<ul class="navbar-nav px-3">
 		<li class="nav-item text-nowrap">
 			<a class="nav-link" href="/logout">Sign out</a>
@@ -68,29 +73,24 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="/admin/customer-account">
 							<span data-feather="file"></span>
-							Manage customer
+							Manage customer account
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="/admin/transation-list">
 							<span data-feather="shopping-cart"></span>
-							Manage transaction
+							Manage banking transaction logs
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="/admin/set-rate-form">
 							<span data-feather="users"></span>
-							Manage money saving
+							Manage money saving & loan
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span data-feather="bar-chart-2"></span>
-							Manage loan
-						</a>
-					</li>
+
 
 				</ul>
 
@@ -106,15 +106,18 @@
 <%--						<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>--%>
 <%--						<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>--%>
 <%--					</div>--%>
-<%--					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">--%>
-<%--						<span data-feather="calendar"></span>--%>
-<%--						This week--%>
-<%--					</button>--%>
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+						<span data-feather="calendar"></span>
+						This week
+					</button>
 				</div>
 			</div>
 
 
 			<h2>Customer lists</h2>
+			<form action="/admin/add-customer-form" method="get">
+				<button class="btn  btn-success">+ Add new customer</button>
+			</form>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm">
 					<thead>
