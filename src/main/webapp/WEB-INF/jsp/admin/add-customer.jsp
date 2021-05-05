@@ -70,7 +70,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="/admin/customer-account">
 							<span data-feather="file"></span>
-							Manage customer
+							Manage customer account
 						</a>
 					</li>
 					<li class="nav-item">
@@ -95,46 +95,97 @@
 
 		<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-				<h1 class="h2">Dashboard</h1>
-				<div class="btn-toolbar mb-2 mb-md-0">
-					<%--					<div class="btn-group me-2">--%>
-					<%--						<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>--%>
-					<%--						<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>--%>
-					<%--					</div>--%>
-					<%--					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">--%>
-					<%--						<span data-feather="calendar"></span>--%>
-					<%--						This week--%>
-					<%--					</button>--%>
+				<h1 class="h2">Add new customer</h1>
+
+			</div>
+			<form class="needs-validation" action="/finish-add-customer" method="Post" novalidate>
+				<div class="row g-3">
+					<div class="col-sm-6">
+						<label for="firstName" class="form-label">First name</label>
+						<input type="text" class="form-control" id="firstName" name = "firstName" placeholder="" value="" required>
+						<div class="invalid-feedback">
+							Valid first name is required.
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<label for="lastName" class="form-label">Last name</label>
+						<input type="text" class="form-control" id="lastName" name = "lastName" placeholder="" value="" required>
+						<div class="invalid-feedback">
+							Valid last name is required.
+						</div>
+					</div>
+
+					<div class="col-12">
+						<label for="username" class="form-label">Email</label>
+						<div class="input-group has-validation">
+
+							<input type="text" class="form-control" id="username" name = "email"  required>
+							<div class="invalid-feedback">
+								Your username is required.
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<label for="phoneNumber" class="form-label">Phone number</label>
+						<input type="text" class="form-control" id="phoneNumber" name = "phoneNumber"  required>
+						<div class="invalid-feedback">
+							Please enter a valid phone number for authenticating.
+						</div>
+					</div>
+
+
+
+
+					<div class="col-md-5">
+						<label for="country" class="form-label">Country</label><br>
+						<select class="form-select" id="country" name = "country" required>
+							<option value="">Choose...</option>
+							<option>Viet Nam </option>
+						</select>
+						<div class="invalid-feedback">
+							Please select a valid country.
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<label for="province" class="form-label">Province/City</label>
+						<select class="form-select" id="province" name = "province" required>
+							<option value="">Choose...</option>
+
+						</select>
+						<div class="invalid-feedback">
+							Please provide a valid state.
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<label for="Town" class="form-label">Town</label>
+						<input type="text" class="form-control" id="Town"  name = "town" placeholder="" required>
+
+					</div>
+
 				</div>
-			</div>
+
+				<hr class="my-4">
+				<div class="row g-3">
+					<div class="col-12">
+						<label for="dob" class="form-label">Date of birth</label><br>
+						<input type = "date" class="datepicker" id = "dob" name = "dob" data-date-format="mm/dd/yyyy">
+
+					</div>
+				</div>
 
 
-			<h2>List of account is not active</h2>
-			<div class="table-responsive">
-				<table class="table table-striped table-sm">
-					<thead>
-					<tr>
-						<th>Id</th>
-						<th>Open Date</th>
-						<th>Balance</th>
-						<th>Customer Id</th>
-						<th></th>
-					</tr>
-					</thead>
-					<tbody>
-					<c:forEach var="account" items="${accounts}">
-						<tr >
-							<td><c:out value='${account.account_id}'/></td>
-							<td><c:out value="${account.open_date}" /></td>
-							<td><c:out value="${account.balance}"/></td>
-							<td><c:out value="${account.customer_id}"/></td>
-							<td><a href="/admin/set-balance-form?id=<c:out value='${account.customer_id}' />">...</a></td>
-						</tr>
 
-					</c:forEach>
-					</tbody>
-				</table>
-			</div>
+				<hr class="my-4">
+
+
+				<button class="w-100 btn btn-primary btn-lg" type="submit">Register</button>
+				<br><br><br>
+			</form>
+
 		</main>
 	</div>
 </div>

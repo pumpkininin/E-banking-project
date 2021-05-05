@@ -70,11 +70,11 @@
 					<li class="nav-item">
 						<a class="nav-link" href="/admin/customer-account">
 							<span data-feather="file"></span>
-							Manage customer
+							Manage customer account
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/admin/transation-list">
+						<a class="nav-link" href="/admin/transation-list" >
 							<span data-feather="shopping-cart"></span>
 							Manage banking transaction logs
 						</a>
@@ -95,46 +95,41 @@
 
 		<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-				<h1 class="h2">Dashboard</h1>
-				<div class="btn-toolbar mb-2 mb-md-0">
-					<%--					<div class="btn-group me-2">--%>
-					<%--						<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>--%>
-					<%--						<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>--%>
-					<%--					</div>--%>
-					<%--					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">--%>
-					<%--						<span data-feather="calendar"></span>--%>
-					<%--						This week--%>
-					<%--					</button>--%>
-				</div>
+				<h1 class="h2">Manage transaction logs</h1>
+
 			</div>
-
-
-			<h2>List of account is not active</h2>
 			<div class="table-responsive">
 				<table class="table table-striped table-sm">
 					<thead>
 					<tr>
-						<th>Id</th>
-						<th>Open Date</th>
-						<th>Balance</th>
-						<th>Customer Id</th>
-						<th></th>
+						<th>Transaction ID</th>
+						<th>Transaction amount</th>
+						<th>Transaction date</th>
+						<th>Sender ID</th>
+						<th>Receiver ID</th>
+						<th>Transaction type</th>
+						<th>Transaction fee</th>
+
 					</tr>
 					</thead>
 					<tbody>
-					<c:forEach var="account" items="${accounts}">
-						<tr >
-							<td><c:out value='${account.account_id}'/></td>
-							<td><c:out value="${account.open_date}" /></td>
-							<td><c:out value="${account.balance}"/></td>
-							<td><c:out value="${account.customer_id}"/></td>
-							<td><a href="/admin/set-balance-form?id=<c:out value='${account.customer_id}' />">...</a></td>
+					<c:forEach var="transaction" items="${transactions}">
+						<tr>
+							<td><c:out value="${transaction.transaction_id}" /></td>
+							<td><c:out value="${transaction.transaction_amount}"/></td>
+							<td><c:out value="${transaction.transaction_date}"/></td>
+							<td><c:out value="${transaction.customer_id}" /></td>
+							<td><c:out value="${transaction.receiver_id}" /></td>
+							<td><c:out value="${transaction.transaction_type}"/> </td>
+							<td><c:out value="${transaction.transaction_fee}" /></td>
 						</tr>
 
 					</c:forEach>
 					</tbody>
 				</table>
 			</div>
+
+
 		</main>
 	</div>
 </div>

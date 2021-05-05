@@ -116,7 +116,8 @@ public class TransactionDAO implements DAO<Transaction>{
 				String type = rs.getString(5);
 				int customer_id = rs.getInt(6);
 				int receiver_id = rs.getInt(7);
-				trans.add(new Transaction(id,transaction_date,transaction_amount,other_details,type,customer_id,receiver_id));
+				float fee = rs.getFloat(8);
+				trans.add(new Transaction(id,transaction_date,transaction_amount,other_details,type,customer_id,receiver_id, fee));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

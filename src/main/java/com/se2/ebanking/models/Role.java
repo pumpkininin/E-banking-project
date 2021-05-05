@@ -23,4 +23,8 @@ public class Role implements Serializable{
         this.role_id = role_id;
         this.customer_id = customer_id;
     }
+    public Role(String role, long customer_id){
+        this.role = role;
+        this.customer_id = customer_id;
+    }
 }

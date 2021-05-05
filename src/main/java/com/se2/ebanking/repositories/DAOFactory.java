@@ -13,8 +13,8 @@ public class DAOFactory {
                     return new AccountDAO();
                 case "Loan":
                     return new LoanDAO();
-                case "Setting":
-                    return new SettingDAO();
+                case "TransactionRate":
+                    return new TransactionRateDAO();
                 case "Role":
                     return new RoleDAO();
                 case "Saving":

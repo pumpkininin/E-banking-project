@@ -15,23 +15,36 @@
 		<jsp:include page="../nav-bar.jsp"></jsp:include>
 					<br><br>
 					<div class="col-md-7 col-lg-8" style = "margin:auto !important; width:50%">
-				        <h4 class="mb-3">Enter required information</h4>
-				        <form class="needs-validation" novalidate action="/customer/loan-confirm-form" method="POST" >
-				          <div class="row g-3">
-				            <div class="col-12">
-				              <label for="money-loan" class="form-label">Amount of money</label>
-								<input type="number" class="form-control" step = "100000" id="money-loan" name = "money-loan" placeholder="" value="" required>
-				              
-				            </div>
-							<div class="col-12">
-				              <label for="duration" class="form-label">Duration (Months)</label>
-				              <input type="number" min ="3" step="1" name="duration" class="form-control" id="duration" required/>
-				            
-				            </div>
-				            </div>
+
 				          <hr class="my-4">
-				          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
-				        </form>
+							<c:choose>
+								<c:when test="${empty loanDetail}">
+						<h4 class="mb-3">Enter required information</h4>
+
+						<form class="needs-validation" novalidate action="/customer/loan-confirm-form" method="POST" >
+							<div class="row g-3">
+								<div class="col-12">
+									<label for="money-loan" class="form-label">Amount of money</label>
+									<input type="number" class="form-control" step = "100000" id="money-loan" name = "money-loan" placeholder="" value="" required>
+
+								</div>
+								<div class="col-12">
+									<label for="duration" class="form-label">Duration (Months)</label>
+									<input type="number" min ="3" step="1" name="duration" class="form-control" id="duration" required/>
+
+									</div>
+								</div>
+							<br><br>
+									<button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
+						</form>
+								</c:when>
+								<c:otherwise>
+
+									<h5 style="color: red">Your previous loan has not been paid, so you cannot make any loan</h5>
+									<br/>
+								</c:otherwise>
+							</c:choose>
+
 						<br><br>
 				      </div>
 		

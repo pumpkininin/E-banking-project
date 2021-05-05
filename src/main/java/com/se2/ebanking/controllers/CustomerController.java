@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Controller
@@ -24,6 +25,9 @@ public class CustomerController {
     }
     @RequestMapping(value = "/customer/transfer-form")
     public String transferForm(Model model){
+        List<String> transferInfo = new ArrayList<>();
+        transferInfo.add("");transferInfo.add("");transferInfo.add("");transferInfo.add("");transferInfo.add("");
+        model.addAttribute("transferInfo", transferInfo);
         return "customer/transfer";
     }
 
@@ -34,47 +38,66 @@ public class CustomerController {
         List<String> transferInfo = new ArrayList<>();
         transferInfo.add(money);
         transferInfo.add(receiverId);
-        String fee = String.valueOf(customerService.getSettings().get(2)*Float.valueOf(money));
+        String fee = String.valueOf(customerService.getTransactionRate().get(2)*Float.valueOf(money));
         transferInfo.add(fee);
+
         if(customerService.getAccount(principal.getName()).getBalance() > Float.valueOf(money)){
-            model.addAttribute("transferInfo", transferInfo);
+            transferInfo.add("");
+
+            if(customerService.getCustomer(Long.valueOf(receiverId)) == null){
+                transferInfo.add("Invalid receiver");
+                model.addAttribute("transferInfo", transferInfo);
+                return "/customer/transfer";
+            }else{
+                transferInfo.add("");
+                model.addAttribute("transferInfo", transferInfo);
+            }
+
             return "/customer/transfer-confirm";
         }else{
-            model.addAttribute("transferFail", "invalidMoney");
-            return "/customer/transfer-fail";
+            transferInfo.add("Invalid amount");
+            transferInfo.add("");
+            model.addAttribute("transferInfo", transferInfo);
+            return "/customer/transfer";
         }
-
-
-
-    }
+}
     @RequestMapping(value = {"/customer/transfer-finish"}, method = RequestMethod.POST)
-    public String transferFinish(@RequestParam(value = "money", required = true) String money,
+    public String finishTransfer(@RequestParam(value = "money", required = true) String money,
                                  @RequestParam(value = "receiverId", required = true) String receiverId,
                                  @RequestParam(value = "fee") String fee,
                                  @RequestParam(value = "password") String password,
                                  Model model, Principal principal){
         String phoneNumber = principal.getName();
+        String error = "";
         if(customerService.authen(phoneNumber, password)){
             customerService.transferMoney(phoneNumber,money, receiverId, fee);
+
             return "redirect:/";
         }else{
-            model.addAttribute("transferFail", "Invalid password");
-            return "/customer/transfer-fail";
+            List<String> transferInfo = new ArrayList<>();
+            transferInfo.add(money);
+            transferInfo.add(receiverId);
+            transferInfo.add(fee);
+            error = "Invalid password";
+            transferInfo.add(error);
+            model.addAttribute("transferInfo", transferInfo);
+            return "/customer/transfer-confirm";
         }
 
     }
     @RequestMapping(value = {"/customer/loan-form"})
-    public String loanForm(Model model){
-
+    public String loanForm(Model model, Principal principal){
+        model.addAttribute("loanDetail", customerService.getLoan(principal.getName()));
         return "/customer/loan";
     }
     @RequestMapping(value = {"/customer/loan-confirm-form"}, method = RequestMethod.POST)
     public String loanConfirmForm(@RequestParam(value = "money-loan", required = true) String money, @RequestParam(value = "duration", required = true) String duration, Model model){
         List<String> loanInfo = new ArrayList<>();
-        String loanRate = String.valueOf(customerService.getSettings().get(1));
+        String loanRate = String.valueOf(customerService.getTransactionRate().get(1));
         loanInfo.add(money);
         loanInfo.add(duration);
         loanInfo.add(loanRate);
+        loanInfo.add("");
         model.addAttribute("loanInfo", loanInfo);
 
         return "/customer/loan-confirm";
@@ -90,8 +113,14 @@ public class CustomerController {
             customerService.loanMoney(phoneNumber, money, duration,rate);
             return "redirect:/";
         }else{
-            model.addAttribute("loanFail", "Invalid password");
-            return "/customer/loan";
+            List<String> loanInfo = new ArrayList<>();
+            String loanRate = String.valueOf(customerService.getTransactionRate().get(1));
+            loanInfo.add(money);
+            loanInfo.add(duration);
+            loanInfo.add(loanRate);
+            loanInfo.add("Invalid password");
+            model.addAttribute("loanInfo", loanInfo);
+            return "/customer/loan-confirm";
         }
     }
     @RequestMapping(value = "/customer/balance")
@@ -107,19 +136,26 @@ public class CustomerController {
     }
     @RequestMapping(value = {"/customer/deposit-confirm-form"})
     public String depositConfirmForm(@RequestParam(value = "money-deposit", required = true)String money, Model model){
-        model.addAttribute("moneyDeposit", money);
+        List<String> depositInfo = new ArrayList<>();
+        depositInfo.add(money);
+        depositInfo.add("");
+        model.addAttribute("moneyDeposit", depositInfo);
         return "/customer/deposit-confirm";
     }
     @RequestMapping(value = {"/customer/deposit-finish"}, method=RequestMethod.POST)
     public String finishDeposit(@RequestParam(value = "money-deposit", required = true)String money,
                                 @RequestParam(value = "password", required = true)String password,
                                 Model model, Principal principal){
+        List<String> depositInfo = new ArrayList<>();
+        depositInfo.add(money);
         if(customerService.authen(principal.getName(),password)){
             customerService.deposit(principal.getName(), money);
             return "redirect:/";
         }else{
-            model.addAttribute("depositFail", "Invalid password");
-            return "/customer/deposit";
+
+            depositInfo.add("Invalid password");
+            model.addAttribute("moneyDeposit", depositInfo);
+            return "/customer/deposit-confirm";
         }
     }
     @RequestMapping(value = {"/customer/saving-form"})
@@ -131,7 +167,8 @@ public class CustomerController {
         List<String> savingInfo = new ArrayList<>();
         savingInfo.add(money);
         savingInfo.add(duration);
-        savingInfo.add(customerService.getSettings().get(2).toString());
+        savingInfo.add(customerService.getTransactionRate().get(2).toString());
+        savingInfo.add("");
         model.addAttribute("savingInfo", savingInfo);
 
         return "/customer/saving-confirm";
@@ -147,12 +184,17 @@ public class CustomerController {
             if(customerService.saveMoney(phoneNumber, money, duration,rate)){
                 return "redirect:/";
             }else{
-                model.addAttribute("savingFail", "Invalid Saving");
+                List<String> savingInfo = new ArrayList<>();
+                savingInfo.add(money);
+                savingInfo.add(duration);
+                savingInfo.add(customerService.getTransactionRate().get(2).toString());
+                model.addAttribute("savingInfo", savingInfo);
+                model.addAttribute("invalid-saving", "Invalid saving");
                 return "/customer/saving";
             }
         }else{
-            model.addAttribute("savingFail", "Invalid password");
-            return "/customer/saving";
+            model.addAttribute("invalid-password", "Invalid password");
+            return "/customer/saving-confirm";
         }
     }
     @RequestMapping(value = {"/customer/withdraw-form"})
@@ -164,8 +206,11 @@ public class CustomerController {
     @RequestMapping(value = {"/customer/withdraw-confirm-form"}, method = RequestMethod.POST)
     public String withdrawConfirmForm(@RequestParam(value = "account") String account, Model model){
 
-
-        model.addAttribute("withdrawInfo", account);
+        List<String> withdrawInfo = new ArrayList<>();
+        withdrawInfo.add(account);
+        withdrawInfo.add("");
+        withdrawInfo.add("");
+        model.addAttribute("withdrawInfo", withdrawInfo);
 
         return "/customer/withdraw-confirm";
     }
@@ -174,11 +219,22 @@ public class CustomerController {
                                  @RequestParam(value = "account-type") String account,
                                  @RequestParam(value = "password") String password,
                                  Model model, Principal principal){
+        List<String> withdrawInfo = new ArrayList<>();
+        withdrawInfo.add(account);
         if(customerService.authen(principal.getName(), password)){
-            customerService.withdraw(money, account, principal.getName());
-            return "redirect:/";
+            if(!customerService.withdraw(money, account, principal.getName())){
+                withdrawInfo.add("");
+                withdrawInfo.add("Your deposit account balance is not enough to withdraw");
+                model.addAttribute("withdrawInfo", withdrawInfo);
+                return "/customer/withdraw-confirm";
+            }else{
+                return "redirect:/";
+            }
         }else{
-            return "redirect:/";
+            withdrawInfo.add("Invalid password");
+            withdrawInfo.add("");
+            model.addAttribute("withdrawInfo", withdrawInfo);
+            return "/customer/withdraw-confirm";
         }
     }
 

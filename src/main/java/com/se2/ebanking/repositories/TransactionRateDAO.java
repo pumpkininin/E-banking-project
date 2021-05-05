@@ -1,8 +1,7 @@
 package com.se2.ebanking.repositories;
 
 import com.se2.ebanking.Connection.dbConnect;
-import com.se2.ebanking.models.Settings;
-import org.springframework.session.ReactiveMapSessionRepository;
+import com.se2.ebanking.models.TransactionRate;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
@@ -10,15 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class SettingDAO implements DAO<Settings> {
+public class TransactionRateDAO implements DAO<TransactionRate> {
     private Connection connection;
 
-    public SettingDAO(){
+    public TransactionRateDAO(){
         this.connection = dbConnect.getConnection();
     }
 
-    public List<Float> selectAllSetting(){
-        String query = "SELECT * FROM admin_settings WHERE setting_id = 1";
+    public List<Float> selectAllTransactionRate(){
+        String query = "SELECT * FROM transaction_rate WHERE rate_id = 1";
         List<Float> settings = new ArrayList<>();
         try{
             PreparedStatement pst = connection.prepareStatement(query);
@@ -38,7 +37,7 @@ public class SettingDAO implements DAO<Settings> {
     }
 
     @Override
-    public void insertModel(Settings settings) {
+    public void insertModel(TransactionRate transactionRate) {
 
     }
 
@@ -48,17 +47,30 @@ public class SettingDAO implements DAO<Settings> {
     }
 
     @Override
-    public void updateModel(Settings settings) {
+    public void updateModel(TransactionRate transactionRate) {
+        String query = "UPDATE transaction_rate SET loan_rate=?, saving_rate=?, transfer_fee=? WHERE rate_id=1";
 
+        try{
+            PreparedStatement pst = connection.prepareStatement(query);
+            pst.setFloat(1, transactionRate.getLoan_rate());
+            pst.setFloat(2, transactionRate.getSaving_rate());
+            pst.setFloat(3, transactionRate.getFee());
+            System.out.println(pst.toString());
+
+            pst.executeUpdate();
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     @Override
-    public Settings selectModel(long id) {
+    public TransactionRate selectModel(long id) {
         return null;
     }
 
     @Override
-    public List<Settings> selectAllModels() {
+    public List<TransactionRate> selectAllModels() {
         return null;
     }
 }

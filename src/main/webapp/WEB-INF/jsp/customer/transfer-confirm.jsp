@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -63,23 +64,18 @@
 						  <div class="col-12">
 							  <label for="password" class="form-label">Password</label>
 							  <input type="password" class="form-control" id="password" name="password" >
-							  <div class="invalid-feedback">
-								  Please enter a valid phone number for authenticating.
+							  <div style="color:red;">
+								  ${transferInfo.get(3)}
 							  </div>
 						  </div>
-						  <div class="col-12">
-							  <label for="password-confirm" class="form-label">Confirm password</label>
-							  <input type="password" class="form-control" id="password-confirm" name ="password-confirm"/>
 
-						  </div>
 						  <br><br><br>
 						  <div class="col-3" style="margin:auto">
 							  <button class="w-100 btn btn-primary btn-lg" type="submit">Finish</button>
 						  </div>
 
 					  </div>
-				  </div>
-
+				  </div></form>
 		  </div>
 	    </div>
 	  </main>

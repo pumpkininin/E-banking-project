@@ -89,15 +89,11 @@
               <div class="col-12">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" >
-                <div class="invalid-feedback">
-                  Please enter a valid phone number for authenticating.
+                <div style="color:red;">
+                  ${loanInfo.get(3)}
                 </div>
               </div>
-            <div class="col-12">
-              <label for="password-confirm" class="form-label">Confirm password</label>
-              <input type="password" class="form-control" id="password-confirm" name ="password-confirm"/>
 
-            </div>
               <br><br><br>
               <div class="col-3" style="margin:auto">
                 <button class="w-100 btn btn-primary btn-lg" type="submit">Finish</button>

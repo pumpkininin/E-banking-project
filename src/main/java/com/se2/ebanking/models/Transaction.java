@@ -20,7 +20,7 @@ public class Transaction {
 	private float transaction_fee;
 
 
-	public Transaction(int transaction_id, Date transaction_date, float transaction_amount, String other_details, String transaction_type, int customer_id, int receiver_id) {
+	public Transaction(int transaction_id, Date transaction_date, float transaction_amount, String other_details, String transaction_type, int customer_id, int receiver_id, float transaction_fee) {
 		this.transaction_id = transaction_id;
 		this.transaction_date = transaction_date;
 		this.transaction_amount = transaction_amount;
@@ -28,13 +28,15 @@ public class Transaction {
 		this.transaction_type = transaction_type;
 		this.customer_id = customer_id;
 		this.receiver_id = receiver_id;
+		this.transaction_fee = transaction_fee;
 	}
-	public Transaction(Date transaction_date, float transaction_amount, long customer_id, long receiver_id, float transaction_fee) {
+	public Transaction(Date transaction_date, float transaction_amount, long customer_id, long receiver_id,String transaction_type, float transaction_fee) {
 		this.transaction_date = transaction_date;
 		this.transaction_amount = transaction_amount;
 		this.customer_id = customer_id;
 		this.receiver_id = receiver_id;
 		this.transaction_fee = transaction_fee;
+		this.transaction_type = transaction_type;
 	}
 
     public Transaction(long id, Date transaction_date, float transaction_amount, long customer_id, long receiver_id, float transaction_fee) {

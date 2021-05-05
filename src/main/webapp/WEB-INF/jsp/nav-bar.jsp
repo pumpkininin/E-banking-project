@@ -15,7 +15,7 @@
 </head>
 <div class = "navigation-bar" style="background-color: #64687d">
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-	<button class="btn" href="<%= request.getContextPath() %>/"><i class="fa fa-home" ></i> Home</button>
+	<a class="nav-link text-light" href="<%= request.getContextPath() %>/customer/"><i class="fa fa-home" ></i> Home</a>
 
 
 	<div class="collapse navbar-collapse" id="navbarNavLeft">

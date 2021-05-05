@@ -53,23 +53,28 @@
           <div class="row g-3">
 	          <div class="col-sm-12">
 	              <label for="money" class="form-label">Amount of money you want to transfer (VND)</label>
-	              <input type="number" class="form-control" step = "100000" id="money" name = "money" placeholder="" value="" required>
+	              <input type="number" class="form-control" step = "100000" id="money" name = "money" placeholder="" value="${transferInfo.get(0)}" required>
+                <div style="color:red;">
+                  ${transferInfo.get(3)}
+                </div>
               </div>
+
 
             <div class="col-12">
               <label for="username" class="form-label">Receiver account number</label>
               <div class="input-group has-validation">
-                <input type="text" class="form-control" name="receiverId" id="username" placeholder="" required>
+                <input type="text" class="form-control" name="receiverId" id="username" placeholder="" value="${transferInfo.get(1)}" required>
               </div>
+              <div style="color:red;">
+              ${transferInfo.get(4)}
+              </div>
+
             </div>
 
             
           </div>
           <br><br>
-          <div class="form-check">
-            <button class ="btn btn-success btn-check-info" type="button"name=check-btn" >Check receiver info</button>
 
-          </div>
           <hr class="my-4">
 
           <button class="w-100 btn btn-primary btn-lg" name="submit-btn" type="submit">Continue to transfer money</button>

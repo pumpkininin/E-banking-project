@@ -61,7 +61,7 @@
                                 <h6 class="my-0">Amount of money</h6>
 
                             </div>
-                            <input size = "10" class="text-muted money" required name = "money-deposit" value="${moneyDeposit}" readonly/>
+                            <input size = "10" class="text-muted money" required name = "money-deposit" value="${moneyDeposit.get(0)}" readonly/>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-sm">
                             <div>
@@ -75,21 +75,18 @@
                 <div class="col-md-7 col-lg-4">
                     <h4 class="mb-3">Confirm your password</h4>
                         <div class="col-12">
-                            <label for="password" class="form-label">password</label>
+                            <label for="password" class="form-label">Password</label>
                             <div class="input-group has-validation">
 
                                 <input type="password" class="form-control" id="password" name = "password" placeholder="" required>
 
                             </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="password-confirm" class="form-label">Confirm password</label>
-                            <input type="password" class="form-control" id="password-confirm" name = "password-confirm" >
-                            <div class="invalid-feedback">
-
+                            <div style="color:red;">
+                                ${moneyDeposit.get(1)}
                             </div>
                         </div>
+
+
 
                         <hr class="my-4">
 

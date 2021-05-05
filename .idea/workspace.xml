@@ -4,9 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
+    <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="add admin function manage transaction logs and Transaction rate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add-customer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-account.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/transaction-logs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/weblogic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Banking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/TransactionRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/SettingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/TransactionRateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/TransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/TransactionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/edt-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/edt-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/deposit-confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/deposit-confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/loan-confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/loan-confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/loan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/loan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/saving-confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/saving-confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/transfer-confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/transfer-confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/transfer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/transfer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/withdraw-confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer/withdraw-confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/nav-bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/nav-bar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/DAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/SettingDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/TransactionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/TransactionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/CustomerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +55,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -49,9 +87,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -131,12 +169,49 @@
       <workItem from="1619616523592" duration="1338000" />
       <workItem from="1619636964361" duration="8614000" />
       <workItem from="1620056456055" duration="960000" />
-      <workItem from="1620061950373" duration="1280000" />
+      <workItem from="1620061950373" duration="4270000" />
+      <workItem from="1620110524831" duration="8941000" />
+      <workItem from="1620127065559" duration="931000" />
+      <workItem from="1620134767651" duration="2437000" />
+      <workItem from="1620148601162" duration="6815000" />
+      <workItem from="1620172066014" duration="12214000" />
     </task>
+    <task id="LOCAL-00001" summary="update account function">
+      <created>1620194650995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620194650995</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add admin function manage transaction logs and Transaction rate">
+      <created>1620194838263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620194838263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update account function" />
+    <MESSAGE value="add admin function manage transaction logs and Transaction rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add admin function manage transaction logs and Transaction rate" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

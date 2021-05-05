@@ -21,11 +21,13 @@
 				<div class="col-12">
 					<label for="money-withdraw" class="form-label">Amount of money</label>
 					<input type="number" class="form-control" step = "100000" id="money-withdraw" name = "money-withdraw" placeholder="" value="" required>
-
+					<div style="color:red;">
+						${withdrawInfo.get(2)}
+					</div>
 				</div>
 				<div class="col-12">
 					<label for="account-type" class="form-label">Account type</label>
-					<input type="text" name="account-type" class="form-control" id="account-type" required value="${withdrawInfo}"/>
+					<input type="text" name="account-type" class="form-control" id="account-type" required value="${withdrawInfo.get(0)}"/>
 
 				</div>
 			</div>
@@ -35,15 +37,11 @@
 				<div class="col-12">
 					<label for="password" class="form-label">Password</label>
 					<input type="password" class="form-control" id="password" name="password" >
-					<div class="invalid-feedback">
-						Please enter a valid phone number for authenticating.
+					<div style="color:red;">
+						${withdrawInfo.get(1)}
 					</div>
 				</div>
-				<div class="col-12">
-					<label for="password-confirm" class="form-label">Confirm password</label>
-					<input type="password" class="form-control" id="password-confirm" name ="password-confirm"/>
 
-				</div>
 				<br><br><br>
 
 
