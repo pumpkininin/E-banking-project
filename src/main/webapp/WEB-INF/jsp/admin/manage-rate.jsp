@@ -66,33 +66,34 @@
 		<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
 			<div class="position-sticky pt-3">
 				<ul class="nav flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/admin/">
-						<span data-feather="home"></span>
-						Dashboard
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/admin/customer-account">
-						<span data-feather="file"></span>
-						Manage customer account
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/admin/transation-list">
-						<span data-feather="shopping-cart"></span>
-						Manage banking transaction logs
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/admin/set-rate-form">
-						<span data-feather="users"></span>
-						Manage money saving & loan
-					</a>
-				</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/admin/">
+							<span data-feather="home"></span>
+							Dashboard
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/admin/customer-account">
+							<span data-feather="file"></span>
+							Manage customer account
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/admin/transation-list">
+							<span data-feather="shopping-cart"></span>
+							Manage banking transaction logs
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/admin/set-rate-form">
+							<span data-feather="users"></span>
+							Manage money saving & loan
+						</a>
+					</li>
 
 
 				</ul>
+
 
 			</div>
 		</nav>
@@ -100,27 +101,17 @@
 		<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 			<div class="container rounded bg-white mt-5 mb-5">
 				<div class="row">
-					<div class="col-md-3 border-right">
-						<div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
-					</div>
 
 					<div class="col-md-5 border-right">
 						<div class="p-3 py-5">
 							<div class="d-flex justify-content-between align-items-center mb-3">
-								<h4 class="text-right">Profile Settings</h4>
+								<h4 class="text-right">Rate Settings</h4>
 							</div>
-							<form action="/admin/set-balance" modelAttributes = "customerObj" method="post">
-								<div class="row mt-2">
-									<div class="col-md-6"><label class="labels">Customer ID</label><input type="number" name = "id" class="form-control" placeholder="first name" value="${customerObj.customer_id}" readonly></div>
-									<div class="col-md-6"><label class="labels">First name</label><input type="text" name = "firstName" class="form-control" placeholder="first name" value="${customerObj.customer_firstName}"></div>
-									<div class="col-md-6"><label class="labels">Last name</label><input type="text" name = "lastName" class="form-control" value="${customerObj.customer_lastName}" placeholder="surname"></div>
-								</div>
-								<div class="row mt-3">
-									<div class="col-md-12">
-										<label class="labels">Enter initial balance</label>
-										<input type="text" name = "initial-balance" class="form-control" placeholder="" >
-									</div>
-
+							<form action="/admin/set-rate-finish" modelAttributes = "rates" method="post">
+								<div class="row mt-1">
+									<div class="col-md-6"><label class="labels">Loan rate</label><input type="number"  step="0.01" name = "loan-rate"   value="${rates.get(0)}" ></div>
+									<div class="col-md-6"><label class="labels">Saving Rate</label><input type="number" step="0.01" name = "saving-rate"   value="${rates.get(1)}"></div>
+									<div class="col-md-6"><label class="labels">Transfer rate</label><input type="number" step="0.01" name = "transfer-rate"  value="${rates.get(2)}" placeholder="surname"></div>
 								</div>
 
 								<div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
