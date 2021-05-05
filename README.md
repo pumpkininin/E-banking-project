@@ -10,9 +10,9 @@
    - JSP
    - JDBC
  ## Software
-   - Eclipse for Enterprise Java Developer
+   - InteliJ
    - MySQL Community Server
-   - Apache Tomcat
+   - Spring boot
  ## SDLC methodoldy
    - Scrum
  ## Software design pattern
