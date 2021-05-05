@@ -34,7 +34,8 @@ public class AccountDAO implements DAO<Account>{
 				float balance = rs.getFloat(3);
 				String type = rs.getString(4);
 				int customer_id = rs.getInt(5);
-				acc.add(new Account(id,open_date,balance,type,customer_id));
+				int is_active = rs.getInt(6);
+				acc.add(new Account(id,open_date,balance,type,customer_id, is_active));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -51,7 +52,7 @@ public class AccountDAO implements DAO<Account>{
 
 	@Override
 	public void insertModel(Account acc) {
-		String query = "INSERT INTO Accounts(open_date, balance, account_type, customer_id) VALUES (?,?,?,?)";
+		String query = "INSERT INTO Accounts(open_date, balance, account_type, customer_id, is_active) VALUES (?,?,?,?,?)";
 
 		try {
 			PreparedStatement ps = connection.prepareStatement(query);
@@ -59,6 +60,7 @@ public class AccountDAO implements DAO<Account>{
 			ps.setFloat(2, acc.getBalance());
 			ps.setString(3, acc.getAccount_type());
 			ps.setLong(4, acc.getCustomer_id());
+			ps.setInt(5, acc.getIs_active());
 			System.out.println(ps.toString());
 			ps.execute();
 		} catch (SQLException e) {
@@ -86,7 +88,7 @@ public class AccountDAO implements DAO<Account>{
 
 	@Override
 	public void updateModel(Account acc) {
-		String query = "UPDATE Accounts SET open_date=?, balance=?, account_type=?, customer_id=? " +"    WHERE account_id=?";
+		String query = "UPDATE Accounts SET open_date=?, balance=?, account_type=?, customer_id=?, is_active=? " +"    WHERE account_id=?";
 
 
 		try {
@@ -96,6 +98,7 @@ public class AccountDAO implements DAO<Account>{
 			ps.setString(3, acc.getAccount_type());
 			ps.setLong(4, acc.getCustomer_id());
 			ps.setLong(5, acc.getAccount_id());
+			ps.setInt(6, acc.getIs_active());
 			System.out.println(ps.toString());
 			ps.executeUpdate();
 		} catch (SQLException e) {
@@ -120,7 +123,8 @@ public class AccountDAO implements DAO<Account>{
 				float balance = rs.getFloat(3);
 				String type = rs.getString(4);
 				int customer_id = rs.getInt(5);
-				acc = new Account(id,open_date,balance,type,customer_id);
+				int is_active = rs.getInt(6);
+				acc = new Account(id,open_date,balance,type,customer_id, is_active);
 			}
 
 		} catch (SQLException e) {
