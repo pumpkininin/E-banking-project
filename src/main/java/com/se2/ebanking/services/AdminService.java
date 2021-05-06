@@ -1,10 +1,7 @@
 package com.se2.ebanking.services;
 
 
-import com.se2.ebanking.models.Account;
-import com.se2.ebanking.models.Customer;
-import com.se2.ebanking.models.Transaction;
-import com.se2.ebanking.models.TransactionRate;
+import com.se2.ebanking.models.*;
 import com.se2.ebanking.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -67,6 +64,8 @@ public class AdminService {
         customerDAO.insertModel(cus);
         cus = customerDAO.findCustomerByPhone(cus.getCustomer_phone());
         accountDAO.insertModel(new Account(join_date, 0, "deposit", cus.getCustomer_id(), 0));
+        roleDAO.insertModel(new Role("ROLE_USER", cus.getCustomer_id()));
+
     }
 
     public List<Transaction> getTransationList() {
@@ -79,5 +78,14 @@ public class AdminService {
 
     public void updateTransactionRate(String loan, String saving, String transfer) {
         transactionRateDAO.updateModel(new TransactionRate(Float.valueOf(loan), Float.valueOf(saving), Float.valueOf(transfer)));
+    }
+
+    public void updateAccount(String id,String balance) {
+        Account acc = accountDAO.selectModel(Long.valueOf(id));
+        System.out.println(acc.getBalance());
+        System.out.println(balance);
+        acc.setBalance(Float.valueOf(balance));
+        acc.setIs_active(1);
+        accountDAO.updateModel(acc);
     }
 }

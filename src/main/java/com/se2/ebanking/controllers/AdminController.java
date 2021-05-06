@@ -65,8 +65,10 @@ public class AdminController {
         return "/admin/customer-account";
     }
     @RequestMapping(value = {"/admin/finish-set-balance"}, method = RequestMethod.POST)
-    public String finishSetBalance(Model model){
-        return "/admin/";
+    public String finishSetBalance(Model model, @RequestParam(value = "initial-balance") String balance,
+                                   @RequestParam(value = "id") String id){
+        adminService.updateAccount(id,balance);
+        return "redirect:/admin/";
     }
     @RequestMapping(value = {"/admin/add-customer-form"})
     public String addCustomerForm(Model model){
@@ -81,7 +83,7 @@ public class AdminController {
         cus.setPassword(encrytePassword(password));
         cus.setLogin(phoneNumber);
         adminService.register(cus);
-        return "/admin/";
+        return "redirect:/admin/";
     }
     @RequestMapping(value = {"/admin/transation-list"})
     public String listTransation(Model model){

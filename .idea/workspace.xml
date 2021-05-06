@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="catch exception loan and saving process">
+    <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/postgresql-13.2-2-windows-x64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add-customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-account.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/postgresql-13.2-2-windows-x64.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

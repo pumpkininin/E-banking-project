@@ -180,22 +180,20 @@ public class CustomerController {
                                @RequestParam(value = "password",required = true )String password,
                                Principal principal,Model model){
         String phoneNumber = principal.getName();
+        List<String> savingInfo = new ArrayList<>();
+        savingInfo.add(money);
+        savingInfo.add(duration);
+        savingInfo.add(customerService.getTransactionRate().get(2).toString());
         if(customerService.authen(phoneNumber, password)){
-            if(customerService.saveMoney(phoneNumber, money, duration,rate)){
-                return "redirect:/";
-            }else{
-                List<String> savingInfo = new ArrayList<>();
-                savingInfo.add(money);
-                savingInfo.add(duration);
-                savingInfo.add(customerService.getTransactionRate().get(2).toString());
-                model.addAttribute("savingInfo", savingInfo);
-                model.addAttribute("invalid-saving", "Invalid saving");
-                return "/customer/saving";
-            }
+            customerService.saveMoney(phoneNumber, money, duration,rate);
+            return "redirect:/";
         }else{
-            model.addAttribute("invalid-password", "Invalid password");
+            savingInfo.add("Invalid password");
+            savingInfo.add("");
+            model.addAttribute("savingInfo", savingInfo);
             return "/customer/saving-confirm";
         }
+
     }
     @RequestMapping(value = {"/customer/withdraw-form"})
     public String withdrawForm(Model model, Principal principal){

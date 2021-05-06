@@ -10,7 +10,7 @@
 	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 	<meta name="generator" content="Hugo 0.80.0">
 	<title>Dashboard Template · Bootstrap v5.0</title>
-
+	<script src = "js/registration.js" defer></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
@@ -103,7 +103,7 @@
 				<h1 class="h2">Add new customer</h1>
 
 			</div>
-			<form class="needs-validation" action="/finish-add-customer" method="Post" novalidate>
+			<form class="needs-validation" action="/admin/finish-add-customer" method="Post" >
 				<div class="row g-3">
 					<div class="col-sm-6">
 						<label for="firstName" class="form-label">First name</label>
@@ -139,37 +139,14 @@
 							Please enter a valid phone number for authenticating.
 						</div>
 					</div>
-
-
-
-
-					<div class="col-md-5">
-						<label for="country" class="form-label">Country</label><br>
-						<select class="form-select" id="country" name = "country" required>
-							<option value="">Choose...</option>
-							<option>Viet Nam </option>
-						</select>
+					<div class="col-12">
+						<label for="address" class="form-label">Address</label>
+						<input type="text" class="form-control" id="address" name = "address"  required>
 						<div class="invalid-feedback">
-							Please select a valid country.
+							Please enter a valid phone number for authenticating.
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<label for="province" class="form-label">Province/City</label>
-						<select class="form-select" id="province" name = "province" required>
-							<option value="">Choose...</option>
-
-						</select>
-						<div class="invalid-feedback">
-							Please provide a valid state.
-						</div>
-					</div>
-
-					<div class="col-md-3">
-						<label for="Town" class="form-label">Town</label>
-						<input type="text" class="form-control" id="Town"  name = "town" placeholder="" required>
-
-					</div>
 
 				</div>
 
@@ -181,13 +158,19 @@
 
 					</div>
 				</div>
-
+				<div class="col-12">
+					<label for="password" class="form-label">Password</label>
+					<input type="text" class="form-control" id="password" name = "password"  required>
+					<div class="invalid-feedback">
+						Please enter a valid phone number for authenticating.
+					</div>
+				</div>
 
 
 				<hr class="my-4">
 
 
-				<button class="w-100 btn btn-primary btn-lg" type="submit">Register</button>
+				<button class="w-100 btn btn-primary btn-lg" type="submit">Add new customer</button>
 				<br><br><br>
 			</form>
 

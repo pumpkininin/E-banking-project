@@ -109,7 +109,7 @@
 							<div class="d-flex justify-content-between align-items-center mb-3">
 								<h4 class="text-right">Profile Settings</h4>
 							</div>
-							<form action="/admin/set-balance" modelAttributes = "customerObj" method="post">
+							<form action="/admin/finish-set-balance" modelAttributes = "customerObj" method="post">
 								<div class="row mt-2">
 									<div class="col-md-6"><label class="labels">Customer ID</label><input type="number" name = "id" class="form-control" placeholder="first name" value="${customerObj.customer_id}" readonly></div>
 									<div class="col-md-6"><label class="labels">First name</label><input type="text" name = "firstName" class="form-control" placeholder="first name" value="${customerObj.customer_firstName}"></div>
@@ -118,7 +118,7 @@
 								<div class="row mt-3">
 									<div class="col-md-12">
 										<label class="labels">Enter initial balance</label>
-										<input type="text" name = "initial-balance" class="form-control" placeholder="" >
+										<input type="number" name = "initial-balance" class="form-control" placeholder="" >
 									</div>
 
 								</div>
