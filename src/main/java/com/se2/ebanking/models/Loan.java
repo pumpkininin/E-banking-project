@@ -1,14 +1,10 @@
 package com.se2.ebanking.models;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 import java.sql.Date;
 
-@NoArgsConstructor
-@Getter
-@Setter
+
 public class Loan {
 	private long loan_id;
 	private float loan_amount;
@@ -38,5 +34,59 @@ public class Loan {
 		this.loan_date = loan_date;
 	}
 
+	public long getLoan_id() {
+		return loan_id;
+	}
 
+	public void setLoan_id(long loan_id) {
+		this.loan_id = loan_id;
+	}
+
+	public float getLoan_amount() {
+		return loan_amount;
+	}
+
+	public void setLoan_amount(float loan_amount) {
+		this.loan_amount = loan_amount;
+	}
+
+	public String getLoan_type() {
+		return loan_type;
+	}
+
+	public void setLoan_type(String loan_type) {
+		this.loan_type = loan_type;
+	}
+
+	public int getDuration() {
+		return duration;
+	}
+
+	public void setDuration(int duration) {
+		this.duration = duration;
+	}
+
+	public float getInterest_rate() {
+		return interest_rate;
+	}
+
+	public void setInterest_rate(float interest_rate) {
+		this.interest_rate = interest_rate;
+	}
+
+	public long getCustomer_id() {
+		return customer_id;
+	}
+
+	public void setCustomer_id(long customer_id) {
+		this.customer_id = customer_id;
+	}
+
+	public Date getLoan_date() {
+		return loan_date;
+	}
+
+	public void setLoan_date(Date loan_date) {
+		this.loan_date = loan_date;
+	}
 }

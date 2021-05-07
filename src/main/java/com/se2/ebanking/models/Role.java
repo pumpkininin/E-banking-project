@@ -1,15 +1,11 @@
 package com.se2.ebanking.models;
 
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 import java.io.Serializable;
 
-@NoArgsConstructor
-@Getter
-@Setter
+
 public class Role implements Serializable{
     private String role;
 
@@ -25,6 +21,30 @@ public class Role implements Serializable{
     }
     public Role(String role, long customer_id){
         this.role = role;
+        this.customer_id = customer_id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public long getRole_id() {
+        return role_id;
+    }
+
+    public void setRole_id(long role_id) {
+        this.role_id = role_id;
+    }
+
+    public long getCustomer_id() {
+        return customer_id;
+    }
+
+    public void setCustomer_id(long customer_id) {
         this.customer_id = customer_id;
     }
 }

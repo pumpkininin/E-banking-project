@@ -1,14 +1,9 @@
 package com.se2.ebanking.models;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.sql.Date;
 
-@NoArgsConstructor
-@Getter
-@Setter
+
 public class Account {
 	private long account_id;
 	private Date open_date;
@@ -37,4 +32,51 @@ public class Account {
 		this.is_active  = is_active;
 	}
 
+	public long getAccount_id() {
+		return account_id;
+	}
+
+	public void setAccount_id(long account_id) {
+		this.account_id = account_id;
+	}
+
+	public Date getOpen_date() {
+		return open_date;
+	}
+
+	public void setOpen_date(Date open_date) {
+		this.open_date = open_date;
+	}
+
+	public float getBalance() {
+		return balance;
+	}
+
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+
+	public String getAccount_type() {
+		return account_type;
+	}
+
+	public void setAccount_type(String account_type) {
+		this.account_type = account_type;
+	}
+
+	public long getCustomer_id() {
+		return customer_id;
+	}
+
+	public void setCustomer_id(long customer_id) {
+		this.customer_id = customer_id;
+	}
+
+	public int getIs_active() {
+		return is_active;
+	}
+
+	public void setIs_active(int is_active) {
+		this.is_active = is_active;
+	}
 }

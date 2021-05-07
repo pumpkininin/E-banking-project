@@ -3,21 +3,105 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_29_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_5_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_5_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_jdbc_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/repositories/AccountDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/postgresql-13.2-2-windows-x64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add-customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/customer-account.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/controllers/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/repositories/AccountDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/services/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/postgresql-13.2-2-windows-x64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Banking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/Connection/dbConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/Connection/dbConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Saving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Saving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/TransactionRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/se2/ebanking/models/TransactionRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/Connection/dbConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/Connection/dbConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Loan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Loan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Saving.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Saving.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/se2/ebanking/models/Transaction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +121,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.8.1-bin/2l5mhf2pq2clrde7f7qp1rdt5m/apache-maven-3.8.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1qybgvfB30EmdcuxsMhlCLzeqdn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,6 +138,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -56,7 +148,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/se2/ebanking" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,13 +186,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,6 +248,7 @@
       <workItem from="1620134767651" duration="2437000" />
       <workItem from="1620148601162" duration="6815000" />
       <workItem from="1620172066014" duration="12584000" />
+      <workItem from="1620413824969" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="update account function">
       <created>1620194650995</created>
@@ -200,6 +295,77 @@
     <MESSAGE value="add admin function manage transaction logs and Transaction rate" />
     <MESSAGE value="catch exception loan and saving process" />
     <option name="LAST_COMMIT_MESSAGE" value="catch exception loan and saving process" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="350" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620415210658">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state x="350" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/52.23.1388.877@52.23.1388.877" timestamp="1620415210658" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1620415776012">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1620415776012" />
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1620416233719">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1620416233719" />
+    <state width="1338" height="286" key="GridCell.Tab.0.bottom/52.23.1388.877@52.23.1388.877" timestamp="1620415238480" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1620416233713">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1620416233713" />
+    <state width="1338" height="286" key="GridCell.Tab.0.center/52.23.1388.877@52.23.1388.877" timestamp="1620415238479" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1620416233703">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1620416233703" />
+    <state width="1338" height="286" key="GridCell.Tab.0.left/52.23.1388.877@52.23.1388.877" timestamp="1620415238478" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1620416233714">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1620416233714" />
+    <state width="1338" height="286" key="GridCell.Tab.0.right/52.23.1388.877@52.23.1388.877" timestamp="1620415238480" />
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom" timestamp="1620416233736">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1620416233736" />
+    <state width="1338" height="286" key="GridCell.Tab.1.bottom/52.23.1388.877@52.23.1388.877" timestamp="1620415238484" />
+    <state width="1398" height="298" key="GridCell.Tab.1.center" timestamp="1620416233728">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1620416233728" />
+    <state width="1338" height="286" key="GridCell.Tab.1.center/52.23.1388.877@52.23.1388.877" timestamp="1620415238482" />
+    <state width="1398" height="298" key="GridCell.Tab.1.left" timestamp="1620416233723">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1620416233723" />
+    <state width="1338" height="286" key="GridCell.Tab.1.left/52.23.1388.877@52.23.1388.877" timestamp="1620415238481" />
+    <state width="1398" height="298" key="GridCell.Tab.1.right" timestamp="1620416233733">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1620416233733" />
+    <state width="1338" height="286" key="GridCell.Tab.1.right/52.23.1388.877@52.23.1388.877" timestamp="1620415238482" />
+    <state width="1338" height="286" key="GridCell.Tab.2.bottom" timestamp="1620415238489">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state width="1338" height="286" key="GridCell.Tab.2.bottom/52.23.1388.877@52.23.1388.877" timestamp="1620415238489" />
+    <state width="1338" height="286" key="GridCell.Tab.2.center" timestamp="1620415238486">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state width="1338" height="286" key="GridCell.Tab.2.center/52.23.1388.877@52.23.1388.877" timestamp="1620415238486" />
+    <state width="1338" height="286" key="GridCell.Tab.2.left" timestamp="1620415238485">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state width="1338" height="286" key="GridCell.Tab.2.left/52.23.1388.877@52.23.1388.877" timestamp="1620415238485" />
+    <state width="1338" height="286" key="GridCell.Tab.2.right" timestamp="1620415238488">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state width="1338" height="286" key="GridCell.Tab.2.right/52.23.1388.877@52.23.1388.877" timestamp="1620415238488" />
+    <state x="245" y="103" key="Maven.ArtifactSearchDialog" timestamp="1620416064764">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="245" y="103" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1620416064764" />
+    <state x="288" y="123" key="Maven.ArtifactSearchDialog/52.23.1388.877@52.23.1388.877" timestamp="1620415537856" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
