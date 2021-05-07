@@ -23,10 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/local.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +169,7 @@
       <workItem from="1620148601162" duration="6815000" />
       <workItem from="1620172066014" duration="12584000" />
       <workItem from="1620413824969" duration="4390000" />
-      <workItem from="1620425398142" duration="984000" />
+      <workItem from="1620425398142" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="update account function">
       <created>1620194650995</created>
