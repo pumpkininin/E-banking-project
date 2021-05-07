@@ -23,6 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3baaca0-40ac-4187-bc60-9bd2c91e9192" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/local.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -109,6 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EBankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Banking" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.se2.ebanking.EBankingApplication" />
@@ -159,6 +172,7 @@
       <workItem from="1620148601162" duration="6815000" />
       <workItem from="1620172066014" duration="12584000" />
       <workItem from="1620413824969" duration="4390000" />
+      <workItem from="1620425398142" duration="984000" />
     </task>
     <task id="LOCAL-00001" summary="update account function">
       <created>1620194650995</created>
@@ -211,6 +225,10 @@
       <screen x="52" y="23" width="1388" height="877" />
     </state>
     <state x="350" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/52.23.1388.877@52.23.1388.877" timestamp="1620415210658" />
+    <state x="465" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620426130366">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="465" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1620426130366" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1620415776012">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
